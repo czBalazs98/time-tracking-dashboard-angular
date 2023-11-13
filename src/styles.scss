@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'colors';
+
+@font-face {
+  font-family: Rubik;
+  src: url(./assets/font/Rubik-VariableFont_wght.ttf);
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Rubik, serif;
+  color: white;
+  background-color: $very-dark-blue;
+}
