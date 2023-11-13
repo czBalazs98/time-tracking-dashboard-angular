@@ -16,3 +16,51 @@ body {
   color: white;
   background-color: $very-dark-blue;
 }
+
+.bg-soft-orange {
+  background-color: $soft-orange;
+}
+
+.bg-light-red {
+  background-color: $light-red;
+}
+
+.bg-light-red-study {
+  background-color: $light-red-study;
+}
+
+.bg-soft-blue {
+  background-color: $soft-blue;
+}
+
+.bg-lime-green {
+  background-color: $lime-green;
+}
+
+.bg-violet {
+  background-color: $violet;
+}
+
+.bg-dark-blue {
+  background-color: $dark-blue;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.text-pale-blue {
+  color: $pale-blue;
+}
+
+.tracker-card-infos {
+  margin-top: -0.5rem;
+}
+
+.tracker-card-infos:hover {
+  background-color: $dar-blue-lighter;
+}
+
+.menu {
+  margin-top: -0.5rem;
+}

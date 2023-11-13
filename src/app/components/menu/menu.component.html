@@ -1,0 +1,17 @@
+<div class="flex flex-col h-full mr-4 rounded-xl font-light">
+
+  <div class="rounded-xl bg-blue p-6 flex-grow relative z-10">
+    <img class="mb-6" [ngSrc]="'/assets/images/image-jeremy.png'" alt="Jeremy image" width="75" height="75">
+    <p class="text-pale-blue">Report for</p>
+    <div class="text-4xl">
+      <p>Jeremy</p>
+      <p>Robson</p>
+    </div>
+  </div>
+
+  <div class="flex flex-col bg-dark-blue p-6 rounded-b-xl menu">
+    <button class="mb-2 hover:text-white" [ngClass]="activeMenuItem === menuItem ? 'text-white' : 'text-pale-blue'"
+            *ngFor="let menuItem of menuItems" (click)="selectMenuItem(menuItem)">{{menuItem}}</button>
+  </div>
+
+</div>

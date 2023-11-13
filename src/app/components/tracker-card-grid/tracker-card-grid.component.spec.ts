@@ -1,18 +1,18 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {FooterComponent} from './footer.component';
+import {TrackerCardGridComponent} from './tracker-card-grid.component';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe('TrackerCardGridComponent', () => {
+  let component: TrackerCardGridComponent;
+  let fixture: ComponentFixture<TrackerCardGridComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FooterComponent]
+      imports: [TrackerCardGridComponent]
     })
       .compileComponents();
 
-    fixture = TestBed.createComponent(FooterComponent);
+    fixture = TestBed.createComponent(TrackerCardGridComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
