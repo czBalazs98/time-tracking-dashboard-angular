@@ -1,5 +1,5 @@
-<div class="flex">
+<div class="flex w-full">
   <app-menu (menuSelectionEvent)="setActiveMenu($event)"></app-menu>
-  <app-tracker-card-grid [activeMenu]="activeMenu"></app-tracker-card-grid>
+  <app-tracker-card-grid class="flex-grow" [activeMenu]="activeMenu"></app-tracker-card-grid>
 </div>
 
