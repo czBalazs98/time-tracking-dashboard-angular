@@ -1,19 +1,20 @@
-<div class="rounded-xl">
+<div class="flex flex-col rounded-xl h-full">
 
   <div [ngClass]="bgClassName" class="rounded-t-xl pr-2 h-12">
     <img class="ml-auto z-0 relative" [ngSrc]="imageSrc" alt="work icon" width="50" height="50">
   </div>
 
-  <div class="rounded-xl bg-dark-blue py-6 px-12 tracker-card-infos relative z-10 cursor-pointer">
+  <div class="flex-grow rounded-xl bg-dark-blue py-6 px-6 sm:px-12 tracker-card-infos relative z-10 cursor-pointer">
 
     <div class="flex justify-between mb-6">
       <p class="font-medium">{{activity.title}}</p>
-      <button><img [ngSrc]="'assets/images/icon-ellipsis.svg'" alt="ellipsis icon" height="5" width="21"></button>
+      <button class="ml-2"><img [ngSrc]="'assets/images/icon-ellipsis.svg'" alt="ellipsis icon" height="5" width="21"></button>
     </div>
 
-    <p class="text-4xl">{{hours}}hrs</p>
-
-    <p class="text-sm text-pale-blue font-light">{{previous}}</p>
+    <div class="flex items-center justify-between sm:flex-col sm:items-start sm:justify-start">
+      <p class="text-4xl">{{hours}}hrs</p>
+      <p class="text-sm text-pale-blue font-light">{{previous}}</p>
+    </div>
 
   </div>
 </div>

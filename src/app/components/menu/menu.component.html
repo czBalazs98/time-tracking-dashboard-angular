@@ -1,16 +1,18 @@
-<div class="flex flex-col h-full mr-4 rounded-xl font-light">
+<div class="flex flex-col h-full mb-4 sm:mr-4 sm:mb-0 rounded-xl font-light">
 
-  <div class="rounded-xl bg-blue p-6 flex-grow relative z-10">
-    <img class="mb-6" [ngSrc]="'/assets/images/image-jeremy.png'" alt="Jeremy image" width="75" height="75">
-    <p class="text-pale-blue">Report for</p>
-    <div class="text-4xl">
-      <p>Jeremy</p>
-      <p>Robson</p>
+  <div class="flex items-center sm:items-start sm:flex-col rounded-xl bg-blue p-6 flex-grow relative z-10">
+    <img class="mr-3 sm:mr-0 sm:mb-6" [ngSrc]="'/assets/images/image-jeremy.png'" alt="Jeremy image" width="75" height="75">
+    <div>
+      <p class="text-pale-blue">Report for</p>
+      <div class="flex sm:flex-col text-4xl flex-wrap">
+        <p class="mr-2 sm:mr-0">Jeremy</p>
+        <p>Robson</p>
+      </div>
     </div>
   </div>
 
-  <div class="flex flex-col bg-dark-blue p-6 rounded-b-xl menu">
-    <button class="mb-2 hover:text-white" [ngClass]="activeMenuItem === menuItem ? 'text-white' : 'text-pale-blue'"
+  <div class="flex justify-between sm:justify-start sm:flex-col bg-dark-blue p-6 rounded-b-xl menu">
+    <button class="sm:mb-2 hover:text-white" [ngClass]="activeMenuItem === menuItem ? 'text-white' : 'text-pale-blue'"
             *ngFor="let menuItem of menuItems" (click)="selectMenuItem(menuItem)">{{menuItem}}</button>
   </div>
 
